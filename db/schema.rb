@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20170306155728) do
     t.string   "title",                               null: false
     t.string   "body",                                null: false
     t.integer  "category_id",                         null: false
+    t.string   "secret_key",                          null: false
     t.decimal  "price",       precision: 7, scale: 2, null: false
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false

@@ -1,0 +1,7 @@
+<div>
+  <h3><%= @article.title %></h3>
+  <p> - <%= @article.body %> </p>
+  <p> - $<%= @article.price %>0 </p>
+  <p>Secret Edit Key: localhost:3000/categories/<%= @article.category_id %>/articles/<%= @article.id %>/edit?key=<%= @article.secret_key %></p>
+</div>
+
