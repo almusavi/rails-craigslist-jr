@@ -4,6 +4,7 @@ class CreateArticles < ActiveRecord::Migration[5.0]
       t.string :title, null: false
       t.string :body, null: false
       t.integer :category_id, null: false
+      t.string :secret_key, null: false
       t.decimal :price, scale: 2, precision: 7, null: false
 
       t.timestamps null: false

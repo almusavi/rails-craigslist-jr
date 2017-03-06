@@ -1,0 +1,11 @@
+<h1> <%= @category.name %> </h1>
+
+<% @articles.each do |each_article| %>
+  <div>
+    <h3> <%= each_article.title %></h3>
+    <p> - <%= each_article.body %> </p>
+    <p> - $<%= each_article.price %>0 </p>
+  </div>
+<% end %>
+
+<a href="/categories/<%= @category.id %>/articles/new">Post New Article</a>
